@@ -263,6 +263,7 @@ struct ElementDetailView: View {
                 .frame(width: 48, height: 48)
                 .overlay {
                     Text(self.element.symbol)
+                        .foregroundStyle(.white)
                 }
         }
     }
