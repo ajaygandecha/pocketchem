@@ -1,0 +1,21 @@
+
+disabled_rules:
+- cyclomatic_complexity
+- large_tuple
+
+opt_in_rules:
+- contains_over_filter_count
+- contains_over_filter_is_empty
+- contains_over_first_not_nil
+- contains_over_range_nil_comparison
+- missing_docs
+- no_empty_block
+- private_swiftui_state
+
+function_body_length:
+  - 100 # warning
+  - 200 # error
+
+type_body_length:
+  - 300 # warning
+  - 400 # error

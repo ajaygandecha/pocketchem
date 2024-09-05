@@ -11,6 +11,30 @@
 		4E520F6A2C8801E100677A05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520F692C8801E100677A05 /* ContentView.swift */; };
 		4E520F6C2C8801E300677A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E520F6B2C8801E300677A05 /* Assets.xcassets */; };
 		4E520F702C8801E300677A05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E520F6F2C8801E300677A05 /* Preview Assets.xcassets */; };
+		4E520F7A2C88041C00677A05 /* CloudStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4E520F792C88041C00677A05 /* CloudStorage */; };
+		4E520F832C88121500677A05 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 4E520F822C88121500677A05 /* Data */; };
+		4E520F852C88121700677A05 /* Design in Frameworks */ = {isa = PBXBuildFile; productRef = 4E520F842C88121700677A05 /* Design */; };
+		4E520F872C88121A00677A05 /* Tools in Frameworks */ = {isa = PBXBuildFile; productRef = 4E520F862C88121A00677A05 /* Tools */; };
+		4E520F912C8812C300677A05 /* ElementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520F8D2C8812C300677A05 /* ElementsView.swift */; };
+		4E520F922C8812C300677A05 /* ElementDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520F8E2C8812C300677A05 /* ElementDetailView.swift */; };
+		4E520F932C8812C300677A05 /* PeriodicTableTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520F8F2C8812C300677A05 /* PeriodicTableTileView.swift */; };
+		4E520F942C8812C300677A05 /* ElementOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520F902C8812C300677A05 /* ElementOfTheDayView.swift */; };
+		4E520F962C88140B00677A05 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520F952C88140B00677A05 /* SettingsStore.swift */; };
+		4E520F9C2C88186A00677A05 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520F972C88186900677A05 /* ToolsView.swift */; };
+		4E520F9D2C88186A00677A05 /* SignificantFiguresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520F982C88186900677A05 /* SignificantFiguresView.swift */; };
+		4E520F9E2C88186A00677A05 /* MolecularSolverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520F992C88186900677A05 /* MolecularSolverView.swift */; };
+		4E520F9F2C88186A00677A05 /* EmpiricalSolverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520F9A2C88186A00677A05 /* EmpiricalSolverView.swift */; };
+		4E520FA02C88186A00677A05 /* EquationBalancerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520F9B2C88186A00677A05 /* EquationBalancerView.swift */; };
+		4E520FA92C88195E00677A05 /* ReactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520FA12C88195E00677A05 /* ReactionsView.swift */; };
+		4E520FAA2C88195E00677A05 /* ConstantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520FA22C88195E00677A05 /* ConstantsView.swift */; };
+		4E520FAB2C88195E00677A05 /* FormulaGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520FA32C88195E00677A05 /* FormulaGroupView.swift */; };
+		4E520FAC2C88195E00677A05 /* MetricPrefixesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520FA42C88195E00677A05 /* MetricPrefixesView.swift */; };
+		4E520FAD2C88195E00677A05 /* FormulasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520FA52C88195E00677A05 /* FormulasView.swift */; };
+		4E520FAE2C88195E00677A05 /* SolubilityRulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520FA62C88195E00677A05 /* SolubilityRulesView.swift */; };
+		4E520FAF2C88195E00677A05 /* AcidsBasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520FA72C88195E00677A05 /* AcidsBasesView.swift */; };
+		4E520FB02C88195E00677A05 /* ReferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520FA82C88195E00677A05 /* ReferenceView.swift */; };
+		4E520FB32C8819D300677A05 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520FB12C8819D300677A05 /* AboutView.swift */; };
+		4E520FB42C8819D300677A05 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E520FB22C8819D300677A05 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +44,30 @@
 		4E520F6B2C8801E300677A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E520F6D2C8801E300677A05 /* PocketChem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketChem.entitlements; sourceTree = "<group>"; };
 		4E520F6F2C8801E300677A05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E520F7E2C88055200677A05 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4E520F7F2C880C7A00677A05 /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
+		4E520F802C88106700677A05 /* Tools */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Tools; sourceTree = "<group>"; };
+		4E520F812C88119700677A05 /* Design */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Design; sourceTree = "<group>"; };
+		4E520F8D2C8812C300677A05 /* ElementsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementsView.swift; sourceTree = "<group>"; };
+		4E520F8E2C8812C300677A05 /* ElementDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementDetailView.swift; sourceTree = "<group>"; };
+		4E520F8F2C8812C300677A05 /* PeriodicTableTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicTableTileView.swift; sourceTree = "<group>"; };
+		4E520F902C8812C300677A05 /* ElementOfTheDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementOfTheDayView.swift; sourceTree = "<group>"; };
+		4E520F952C88140B00677A05 /* SettingsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		4E520F972C88186900677A05 /* ToolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		4E520F982C88186900677A05 /* SignificantFiguresView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignificantFiguresView.swift; sourceTree = "<group>"; };
+		4E520F992C88186900677A05 /* MolecularSolverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MolecularSolverView.swift; sourceTree = "<group>"; };
+		4E520F9A2C88186A00677A05 /* EmpiricalSolverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmpiricalSolverView.swift; sourceTree = "<group>"; };
+		4E520F9B2C88186A00677A05 /* EquationBalancerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquationBalancerView.swift; sourceTree = "<group>"; };
+		4E520FA12C88195E00677A05 /* ReactionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionsView.swift; sourceTree = "<group>"; };
+		4E520FA22C88195E00677A05 /* ConstantsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsView.swift; sourceTree = "<group>"; };
+		4E520FA32C88195E00677A05 /* FormulaGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaGroupView.swift; sourceTree = "<group>"; };
+		4E520FA42C88195E00677A05 /* MetricPrefixesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricPrefixesView.swift; sourceTree = "<group>"; };
+		4E520FA52C88195E00677A05 /* FormulasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasView.swift; sourceTree = "<group>"; };
+		4E520FA62C88195E00677A05 /* SolubilityRulesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolubilityRulesView.swift; sourceTree = "<group>"; };
+		4E520FA72C88195E00677A05 /* AcidsBasesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcidsBasesView.swift; sourceTree = "<group>"; };
+		4E520FA82C88195E00677A05 /* ReferenceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceView.swift; sourceTree = "<group>"; };
+		4E520FB12C8819D300677A05 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		4E520FB22C8819D300677A05 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +75,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E520F852C88121700677A05 /* Design in Frameworks */,
+				4E520F832C88121500677A05 /* Data in Frameworks */,
+				4E520F872C88121A00677A05 /* Tools in Frameworks */,
+				4E520F7A2C88041C00677A05 /* CloudStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +88,13 @@
 		4E520F5B2C8801E100677A05 = {
 			isa = PBXGroup;
 			children = (
+				4E520F7E2C88055200677A05 /* README.md */,
 				4E520F662C8801E100677A05 /* PocketChem */,
+				4E520F7F2C880C7A00677A05 /* Data */,
+				4E520F812C88119700677A05 /* Design */,
+				4E520F802C88106700677A05 /* Tools */,
 				4E520F652C8801E100677A05 /* Products */,
+				4E520F7B2C88042600677A05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				4E520F672C8801E100677A05 /* PocketChemApp.swift */,
-				4E520F692C8801E100677A05 /* ContentView.swift */,
+				4E520F892C88126C00677A05 /* Tabs */,
+				4E520F882C88123200677A05 /* Elements */,
+				4E520F8A2C88128700677A05 /* Tools */,
+				4E520F8B2C88128E00677A05 /* Reference */,
+				4E520F8C2C88129500677A05 /* Settings */,
 				4E520F6B2C8801E300677A05 /* Assets.xcassets */,
 				4E520F6D2C8801E300677A05 /* PocketChem.entitlements */,
 				4E520F6E2C8801E300677A05 /* Preview Content */,
@@ -69,6 +130,69 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4E520F7B2C88042600677A05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E520F882C88123200677A05 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				4E520F8D2C8812C300677A05 /* ElementsView.swift */,
+				4E520F8E2C8812C300677A05 /* ElementDetailView.swift */,
+				4E520F8F2C8812C300677A05 /* PeriodicTableTileView.swift */,
+				4E520F902C8812C300677A05 /* ElementOfTheDayView.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		4E520F892C88126C00677A05 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				4E520F692C8801E100677A05 /* ContentView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		4E520F8A2C88128700677A05 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4E520F972C88186900677A05 /* ToolsView.swift */,
+				4E520F9B2C88186A00677A05 /* EquationBalancerView.swift */,
+				4E520F982C88186900677A05 /* SignificantFiguresView.swift */,
+				4E520F9A2C88186A00677A05 /* EmpiricalSolverView.swift */,
+				4E520F992C88186900677A05 /* MolecularSolverView.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4E520F8B2C88128E00677A05 /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				4E520FA82C88195E00677A05 /* ReferenceView.swift */,
+				4E520FA52C88195E00677A05 /* FormulasView.swift */,
+				4E520FA32C88195E00677A05 /* FormulaGroupView.swift */,
+				4E520FA72C88195E00677A05 /* AcidsBasesView.swift */,
+				4E520FA62C88195E00677A05 /* SolubilityRulesView.swift */,
+				4E520FA12C88195E00677A05 /* ReactionsView.swift */,
+				4E520FA22C88195E00677A05 /* ConstantsView.swift */,
+				4E520FA42C88195E00677A05 /* MetricPrefixesView.swift */,
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
+		4E520F8C2C88129500677A05 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4E520F952C88140B00677A05 /* SettingsStore.swift */,
+				4E520FB22C8819D300677A05 /* SettingsView.swift */,
+				4E520FB12C8819D300677A05 /* AboutView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,12 +203,19 @@
 				4E520F602C8801E100677A05 /* Sources */,
 				4E520F612C8801E100677A05 /* Frameworks */,
 				4E520F622C8801E100677A05 /* Resources */,
+				4E520FB52C889D3600677A05 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PocketChem;
+			packageProductDependencies = (
+				4E520F792C88041C00677A05 /* CloudStorage */,
+				4E520F822C88121500677A05 /* Data */,
+				4E520F842C88121700677A05 /* Design */,
+				4E520F862C88121A00677A05 /* Tools */,
+			);
 			productName = PocketChem;
 			productReference = 4E520F642C8801E100677A05 /* PocketChem.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +244,10 @@
 				Base,
 			);
 			mainGroup = 4E520F5B2C8801E100677A05;
+			packageReferences = (
+				4E520F772C88040F00677A05 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				4E520F782C88041C00677A05 /* XCRemoteSwiftPackageReference "CloudStorage" */,
+			);
 			productRefGroup = 4E520F652C8801E100677A05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,13 +269,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E520FB52C889D3600677A05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E520F602C8801E100677A05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E520FB02C88195E00677A05 /* ReferenceView.swift in Sources */,
+				4E520FB32C8819D300677A05 /* AboutView.swift in Sources */,
 				4E520F6A2C8801E100677A05 /* ContentView.swift in Sources */,
+				4E520F922C8812C300677A05 /* ElementDetailView.swift in Sources */,
+				4E520FAF2C88195E00677A05 /* AcidsBasesView.swift in Sources */,
+				4E520F9F2C88186A00677A05 /* EmpiricalSolverView.swift in Sources */,
+				4E520FAD2C88195E00677A05 /* FormulasView.swift in Sources */,
 				4E520F682C8801E100677A05 /* PocketChemApp.swift in Sources */,
+				4E520F962C88140B00677A05 /* SettingsStore.swift in Sources */,
+				4E520FAE2C88195E00677A05 /* SolubilityRulesView.swift in Sources */,
+				4E520F9E2C88186A00677A05 /* MolecularSolverView.swift in Sources */,
+				4E520F9D2C88186A00677A05 /* SignificantFiguresView.swift in Sources */,
+				4E520F942C8812C300677A05 /* ElementOfTheDayView.swift in Sources */,
+				4E520FAC2C88195E00677A05 /* MetricPrefixesView.swift in Sources */,
+				4E520FA92C88195E00677A05 /* ReactionsView.swift in Sources */,
+				4E520F932C8812C300677A05 /* PeriodicTableTileView.swift in Sources */,
+				4E520F9C2C88186A00677A05 /* ToolsView.swift in Sources */,
+				4E520FA02C88186A00677A05 /* EquationBalancerView.swift in Sources */,
+				4E520FAA2C88195E00677A05 /* ConstantsView.swift in Sources */,
+				4E520F912C8812C300677A05 /* ElementsView.swift in Sources */,
+				4E520FAB2C88195E00677A05 /* FormulaGroupView.swift in Sources */,
+				4E520FB42C8819D300677A05 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +450,7 @@
 				DEVELOPMENT_TEAM = 9ZR87Z2AF9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -284,12 +462,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ajaygandecha.PocketChem;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajaygandecha.Pocketchem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -311,6 +489,7 @@
 				DEVELOPMENT_TEAM = 9ZR87Z2AF9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -322,12 +501,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ajaygandecha.PocketChem;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajaygandecha.Pocketchem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -359,6 +538,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E520F772C88040F00677A05 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.56.2;
+			};
+		};
+		4E520F782C88041C00677A05 /* XCRemoteSwiftPackageReference "CloudStorage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nonstrict-hq/CloudStorage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E520F792C88041C00677A05 /* CloudStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E520F782C88041C00677A05 /* XCRemoteSwiftPackageReference "CloudStorage" */;
+			productName = CloudStorage;
+		};
+		4E520F822C88121500677A05 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		4E520F842C88121700677A05 /* Design */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Design;
+		};
+		4E520F862C88121A00677A05 /* Tools */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Tools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4E520F5C2C8801E100677A05 /* Project object */;
 }
