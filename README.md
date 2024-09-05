@@ -19,6 +19,8 @@ For instructional and portfolio value, PocketChem's source code is available for
 
 ## Features
 
+### Notes on Chemical Equation Balancing
+
 
 ## Architecture
 
