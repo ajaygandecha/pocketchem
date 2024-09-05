@@ -32,10 +32,57 @@ struct ElementDetailView: View {
                             Text("\(self.element.elementClass.rawValue)")
                                 .font(.system(size: 28, weight: .light))
                         }
+                        .foregroundStyle(self.element.color)
                         Text("\(self.element.symbol)")
+                            .foregroundStyle(self.element.color)
                             .font(.system(size: 72, weight: .light))
                         Text("\(self.element.name)")
+                            .foregroundStyle(self.element.color)
                             .font(.system(size: 28))
+
+                        HStack {
+                            Spacer()
+                            if let primary = self.element.flameColor.primary,
+                               let secondary = self.element.flameColor.secondary {
+
+                                RoundedRectangle(cornerRadius: 16.0)
+                                    .foregroundStyle(Color.secondaryGroupedBackground)
+                                    .frame(width: 164, height: 32)
+                                    .overlay {
+                                        HStack {
+                                            ZStack {
+                                                Circle()
+                                                    .frame(width: 8, height: 8)
+                                                    .padding(.top, 6)
+                                                    .foregroundStyle(Color(uiColor: secondary))
+                                                Image(systemName: "flame.fill")
+                                                    .foregroundStyle(Color(uiColor: primary))
+                                            }
+                                            Text("Flame Color")
+                                                .font(.callout)
+                                                .foregroundStyle(.primary)
+                                        }
+                                    }
+                                    .padding(.bottom, 12)
+                            }
+
+                            if self.element.isRadioactive {
+                                RoundedRectangle(cornerRadius: 16.0)
+                                    .foregroundStyle(Color.secondaryGroupedBackground)
+                                    .frame(width: 164, height: 32)
+                                    .overlay {
+                                        HStack {
+                                            Image(systemName: "diamond.circle.fill")
+                                                .foregroundStyle(.pcYellow)
+                                            Text("Radioactive")
+                                                .font(.callout)
+                                                .foregroundStyle(.primary)
+                                        }
+                                    }
+                                    .padding(.bottom, 12)
+                            }
+                            Spacer()
+                        }
 
                         HStack {
                             Spacer()
@@ -48,7 +95,6 @@ struct ElementDetailView: View {
                             Spacer()
                         }
                     }
-                    .foregroundStyle(self.element.color)
                     .background(Color.groupedBackground)
                     .listRowInsets(EdgeInsets())
 
@@ -62,8 +108,8 @@ struct ElementDetailView: View {
                     }
                 }
             }
-
         }
+        .environment(\.defaultMinListRowHeight, 24)
     }
 
     @ViewBuilder
@@ -223,6 +269,6 @@ struct ElementDetailView: View {
 }
 
 #Preview {
-    ElementDetailView(element: DataStore.shared.elements[0])
+    ElementDetailView(element: DataStore.shared.elements[10])
         .fontDesign(.rounded)
 }
