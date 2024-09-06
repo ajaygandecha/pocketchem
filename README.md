@@ -21,12 +21,27 @@ For instructional and portfolio value, PocketChem's source code is available for
 
 ### Notes on Chemical Equation Balancing
 
+One of the biggest challenges for PocketChem was implementing the chemical equation balancer feature. Typically, balancing chemical equations is done with a bit of intuition and is not typically taught with in the formulaic context. However, in high school, I had just learned about matrices in pre-calculus class and we briefly covered how it can be used to solve linear equations. This type of math is ultimately at the heart of linear algebra - and we can apply linear algebra to solve these types of problems.
+
+As an example, let's take the photosynthesis equation: $CO_2+H_2O \rightarrow C_6H_{12}O_6+O_2$. When balancing a chemical equation, we are trying to solve for coefficients before each chemical compound such that the number of each elements are equal between the left and right-hand sides of the equations. Let's represent these coefficients as variables $a_1,a_2,...a_n$, giving us this equation:
+
+$$
+a_1\left(CO_2\right)+a_2\left(H_2O\right) \rightarrow a_3\left(C_6H_{12}O_6\right)+a_4\left(O_2\right)
+$$
+
+From this, we can create a system of linear equations. We can separate this 
+
+$$
+x=2
+$$
 
 ## Architecture
 
-PocketChem utilizes the MV architecture
+PocketChem generally utilizes the MV architecture for managing state within its views. Despite having worked with MVVM in the past and exploring other architectures including The Composable Architecture (TCA), PocketChem does not include much state manipulation. States manipulated are pretty specific and local to each view. Data is also not manipulated extensively, only passed into service functions. Therefore, some of the more sophistocated architectures were not necessary for this project.
 
-The app also utilizes modularization. The core PocketChem target solely includes screens and specialized views. All of the models and data used to power the application is placed in a separate, standalone `Data` package that lives in the PocketChem project. The `Tools` package includes all of the business logic, helpful extensions, and service structs. These services include the business logic for the chemical equation balancer, empiricial formula solver, etc. The `Tools` package depends on the `Data` package to accept and work with the necessary data models. Finally, a separate `Design` package, decoupled from the `Data` and `Tools` packages, include separate global-level shared views and design-related extensions. The PocketChem target then embeds the `Data`, `Tools`, and `Design` packages to include all of the necessary models, functionalities, and design components.
+The app does utilize **modularization**. The core PocketChem target solely includes screens and specialized views. All of the models and data used to power the application is placed in a separate, standalone `Data` package that lives in the PocketChem project. The `Tools` package includes all of the business logic, helpful extensions, and service structs. These services include the business logic for the chemical equation balancer, empiricial formula solver, etc. The `Tools` package depends on the `Data` package to accept and work with the necessary data models. Finally, a separate `Design` package, decoupled from the `Data` and `Tools` packages, include separate global-level shared views and design-related extensions. The PocketChem target then embeds the `Data`, `Tools`, and `Design` packages to include all of the necessary models, functionalities, and design components.
+
+(image)
 
 This modularization approach is great for a few reasons. For one, it makes the organization of the application source code much more intentional and easy to work with, as related code and functionality are packaged together. It also creates more clear and concrete abstraction barriers and prevents the design and architecture of the app to include over-coupling and circular dependencies. Apple's sample [Backyards Birds App](https://github.com/apple/sample-backyard-birds/tree/main) utilizes this approach, defining two separate Data and UI packages. The open-source [Ice Cubes App](https://github.com/Dimillian/IceCubesApp/tree/main) also shows this approach at scale. 
 
