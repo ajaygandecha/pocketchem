@@ -21,17 +21,25 @@ struct ContentView: View {
     var body: some View {
         if self.horizontalSizeClass == .compact {
             TabView {
-                ElementsView()
-                    .tabItem { Label("Elements", systemImage: "flask") }
+                NavigationStack {
+                    ElementsView()
+                }
+                .tabItem { Label("Elements", systemImage: "flask") }
 
-                ToolsView()
-                    .tabItem { Label("Tools", systemImage: "wrench.and.screwdriver") }
+                NavigationStack {
+                    ToolsView()
+                }
+                .tabItem { Label("Tools", systemImage: "wrench.and.screwdriver") }
 
-                ReferenceView()
-                    .tabItem {  Label("Reference", systemImage: "book") }
+                NavigationStack {
+                    ReferenceView()
+                }
+                .tabItem {  Label("Reference", systemImage: "book") }
 
-                SettingsView()
-                    .tabItem { Label("Settings", systemImage: "gearshape") }
+                NavigationStack {
+                    SettingsView()
+                }
+                .tabItem { Label("Settings", systemImage: "gearshape") }
             }
         } else {
             NavigationSplitView {
@@ -49,17 +57,19 @@ struct ContentView: View {
                 }
                 .navigationTitle("PocketChem")
             } detail: {
-                switch selectedTab {
-                case .elements:
-                    ElementsView()
-                case .tools:
-                    ToolsView()
-                case .reference:
-                    ReferenceView()
-                case .settings:
-                    SettingsView()
-                case .none:
-                    EmptyView()
+                NavigationStack {
+                    switch selectedTab {
+                    case .elements:
+                        ElementsView()
+                    case .tools:
+                        ToolsView()
+                    case .reference:
+                        ReferenceView()
+                    case .settings:
+                        SettingsView()
+                    case .none:
+                        EmptyView()
+                    }
                 }
             }
         }

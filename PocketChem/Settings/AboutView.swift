@@ -17,14 +17,12 @@ struct AboutView: View {
     @Environment(\.openURL) var openURL
 
     var body: some View {
-        NavigationStack {
-            List {
-                developerSection
-                aboutSection
-                acknowledgementsSection
-            }
-            .navigationTitle("About PocketChem")
+        List {
+            developerSection
+            aboutSection
+            acknowledgementsSection
         }
+        .navigationTitle("About PocketChem")
     }
 
     @ViewBuilder

@@ -12,22 +12,20 @@ import SwiftUI
 
 struct FormulasView: View {
     var body: some View {
-        NavigationStack {
-            List {
-                Section {
-                    FormulaGroupView(for: Formula.formulas)
-                } header: {
-                    Label("Basic Formulas", systemImage: "equal.square")
-                }
-
-                Section {
-                    FormulaGroupView(for: Formula.thermochemistryFormulas)
-                } header: {
-                    Label("Thermochemistry Formulas", systemImage: "thermometer.high")
-                }
+        List {
+            Section {
+                FormulaGroupView(for: Formula.formulas)
+            } header: {
+                Label("Basic Formulas", systemImage: "equal.square")
             }
-            .navigationTitle("Formulas")
+
+            Section {
+                FormulaGroupView(for: Formula.thermochemistryFormulas)
+            } header: {
+                Label("Thermochemistry Formulas", systemImage: "thermometer.high")
+            }
         }
+        .navigationTitle("Formulas")
     }
 }
 
