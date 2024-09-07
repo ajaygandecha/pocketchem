@@ -7,17 +7,15 @@
 
 > Developed by [Ajay Gandecha](https://github.com/ajaygandecha) and released to the iOS App Store.
 
-( Image here )
-
 <p align="middle">
-  <img src="https://github.com/user-attachments/assets/7835f521-828b-4585-b7ce-afe7bacaac33" width="100" />
-  <img src="https://github.com/user-attachments/assets/b83c3cf4-9e7a-4b5e-b857-8480127d15e0" width="250" /> 
-  <img src="/img3.png" width="100" />
+  <img src="https://github.com/user-attachments/assets/b83c3cf4-9e7a-4b5e-b857-8480127d15e0" width="180" />
+  <img src="https://github.com/user-attachments/assets/ed9e0331-d3de-4eef-97aa-647f50b015e2" width="180" />
+  <img src="https://github.com/user-attachments/assets/58631c48-f39c-4fd3-b13c-8b716cfb920d" width="180" />
+  <img src="https://github.com/user-attachments/assets/7c4b2472-dc9f-4f10-a23a-d82cf989e6c5" width="180" />
+  <img src="https://github.com/user-attachments/assets/4816b2a6-d558-49b1-85bf-cd05553c2344" width="180" />
 </p>
 
-![iOS - One](https://github.com/user-attachments/assets/7835f521-828b-4585-b7ce-afe7bacaac33) ![PocketChem Home Screen](https://github.com/user-attachments/assets/b83c3cf4-9e7a-4b5e-b857-8480127d15e0)
-
-PocketChem is a periodic table and chemistry reference app designed for iOS devices, written purely with Swift and SwiftUI.
+**PocketChem** is a periodic table and chemistry reference app designed for **iOS devices**, written purely with **Swift** and **SwiftUI**.
 
 I first developed PocketChem in high school over four years ago to help high school students in their chemistry classes. PocketChem 2.0 is a complete rewrite of the original PocketChem, including a brand-new design, full landscape orientation support for iPad, and fixes many bugs that existed on the previous version.
 
@@ -26,6 +24,23 @@ PocketChem was first released while I was in my first ever programming class in 
 For instructional and portfolio value, PocketChem's source code is available for viewing here on this GitHub page. This README file also includes some notes on PocketChem's architecture and design.
 
 ## Features
+
+Users of PocketChem can:
+- Browse through the **periodic table** in both light mode and dark mode. The table is *searchable*, and *animates* to show certain metrics (atomic radius, electronegativity, and ionization energy) relative to all other elements. Users can switch to a list representation as well.
+- View **data on all 118 elements**, including atomic mass, phase at STP, density, atomic radius, electronegativity, ionization energy, boiling and melting points, and more. Each element also comes with an electron configuration diagram, *generated entirely with SwiftUI*. Elements also show their flame colors (if applicable) and if they are radioactive! The page also includes history and extra information about each element, including all of the element's isoptopes with  mass, natural abundance, half life, and mode of decay for each.
+- Access many useful chemistry tools, including:
+  - **Chemical equation balancer**: Balances chemical equations (for example: $6CO_2+6H_2O \rightarrow C_6H_{12}O_6+6O_2$). *See more about in the 'Notes on Approaching Programmatic Chemical Equation Balancing' section below!*
+  - **Significant figure calculator**: Counts the number of significant figures in a provided number.
+  - **Empirical formula solver**: Finds the empirical formula given many elements and their masses.
+  - **Molecular formula solver**: Finds the molecular formula given a mass and an empirical formula.
+- Read the reference guide, which includes information on:
+  - *Fundamental chemistry formulas*
+  - *Strong acids and strong bases*
+  - *Solubility rules*
+  - *Fundamental chemical reactions*
+  - *Common constant values*
+  - *Metric prefixes*
+
 
 ## Architecture
 
