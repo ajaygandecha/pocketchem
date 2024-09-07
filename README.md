@@ -17,11 +17,11 @@
 
 **PocketChem** is a periodic table and chemistry reference app designed for **iOS devices**, written purely with **Swift** and **SwiftUI**.
 
-I first developed PocketChem in high school over four years ago to help high school students in their chemistry classes. PocketChem 2.0 is a complete rewrite of the original PocketChem, including a brand-new design, full landscape orientation support for iPad, and fixes many bugs that existed on the previous version.
+I first developed PocketChem in high school to help high school students in their chemistry classes. PocketChem 2.0 is a complete rewrite of the original PocketChem, including a brand-new design, full landscape orientation support for iPad, and fixes many bugs that existed on the previous version.
 
-PocketChem was first released while I was in my first ever programming class in high school. Now that I am in my final semester of undergrad studies, it has been super fun to revisit this older project and update it using all of the techniques I have learned over the last four years!
+PocketChem was first released in early 2020 while I was in my first ever programming class in high school. Now that I am in my final semester of undergrad studies, it has been super fun to revisit this older project and update it using all of the techniques I have learned over the last four years! A lot has changed in the iOS development ecosystem since. When PocketChem was first released, *dark mode* was considered a brand-new feature on iOS! Since 2020, Apple continued to developed the SwiftUI framework as the flagship way to create user interfaces for iOS applications. PocketChem was initially written using UIKit and many custom design conventions. Redesigning PocketChem to fully utilize SwiftUI and conform to the new Apple HIG standards was both fun and rewarding.
 
-For instructional and portfolio value, PocketChem's source code is available for viewing here on this GitHub page. This README file also includes some notes on PocketChem's architecture and design.
+For both instructional and portfolio value, PocketChem's source code is available for viewing here on this GitHub page. This README file also includes some notes on PocketChem's architecture and design.
 
 ## Features
 
@@ -184,5 +184,6 @@ ChemistryParser.elementsAndNumbersFromCompound(ironIIISulfate)
 
 *In the future, I plan on updating this parser to include learned lessons from college study of languages and compilers to support nested parenthesis (while rare, the functionality would be useful to include).*
 
-## Final Thoughts
+## Final Notes
 
+PocketChem will remain in active development! New features are planned and will be added soon.
