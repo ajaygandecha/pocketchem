@@ -54,11 +54,13 @@ This modularization approach is great for a few reasons. For one, it makes the o
 
 Modularization also enables better organization of unit and integration testing since each package can be tested separately (as described in the section below).
 
-## Testing
+## Testing and Linting
 
 The `Tools` package within the PocketChem project contains most of the business logic and functionality that must be tested. The test files for the `Tools` package are included in the package, and the testing for each package can be run separately. PocketChem utilizes the new [Swift Testing](https://developer.apple.com/xcode/swift-testing/) framework for testing the `Tools` package. Swift Testing seeks to augment (and replace, eventually) the old `XCTest` framework and makes testing far easier and idiomatic within Swift.
 
 Through the testing in the package, the `Tools` package testing passes 100% of tests and the package has nearly 100% testing code coverage.
+
+PocketChem also utilizes [SwiftLint](https://github.com/realm/SwiftLint), the leading Swift linter and style guide enforcer, to ensure code readability and conformance to a cohesive style guide. Options to control the linter can be found in `/.swiftlint.yml`.
 
 ## Implementing Chemistry Functionality
 
