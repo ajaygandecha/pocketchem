@@ -8,11 +8,11 @@
 > Developed by [Ajay Gandecha](https://github.com/ajaygandecha) and released to the iOS App Store.
 
 <p align="middle">
-  <img src="https://github.com/user-attachments/assets/b83c3cf4-9e7a-4b5e-b857-8480127d15e0" width="180" />
-  <img src="https://github.com/user-attachments/assets/ed9e0331-d3de-4eef-97aa-647f50b015e2" width="180" />
-  <img src="https://github.com/user-attachments/assets/58631c48-f39c-4fd3-b13c-8b716cfb920d" width="180" />
-  <img src="https://github.com/user-attachments/assets/7c4b2472-dc9f-4f10-a23a-d82cf989e6c5" width="180" />
-  <img src="https://github.com/user-attachments/assets/4816b2a6-d558-49b1-85bf-cd05553c2344" width="180" />
+  <img src="https://github.com/user-attachments/assets/b83c3cf4-9e7a-4b5e-b857-8480127d15e0" width="160" />
+  <img src="https://github.com/user-attachments/assets/ed9e0331-d3de-4eef-97aa-647f50b015e2" width="160" />
+  <img src="https://github.com/user-attachments/assets/58631c48-f39c-4fd3-b13c-8b716cfb920d" width="160" />
+  <img src="https://github.com/user-attachments/assets/7c4b2472-dc9f-4f10-a23a-d82cf989e6c5" width="160" />
+  <img src="https://github.com/user-attachments/assets/4816b2a6-d558-49b1-85bf-cd05553c2344" width="160" />
 </p>
 
 **PocketChem** is a periodic table and chemistry reference app designed for **iOS devices**, written purely with **Swift** and **SwiftUI**.
