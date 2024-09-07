@@ -30,7 +30,6 @@ struct ElementsView: View {
     @State private var tileMode: PeriodicTableTileMode = .group
 
     var body: some View {
-        NavigationStack {
             VStack(alignment: .leading) {
 
                 if elementViewState == .table {
@@ -98,8 +97,7 @@ struct ElementsView: View {
                 self.elementViewState = settingsStore.defaultElementViewState
             }
             .disabled(showColorKeyPopover)
-        }
-        .environment(\.defaultMinListRowHeight, 36)
+            .environment(\.defaultMinListRowHeight, 36)
     }
 
     @State private var offset = CGPoint.zero

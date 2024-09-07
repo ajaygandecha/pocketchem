@@ -12,16 +12,14 @@ import SwiftUI
 
 struct ConstantsView: View {
     var body: some View {
-        NavigationStack {
-            List {
-                Section {
-                    FormulaGroupView(for: Formula.constantValues)
-                } header: {
-                    Label("All Constant Values", systemImage: "numbers.rectangle")
-                }
+        List {
+            Section {
+                FormulaGroupView(for: Formula.constantValues)
+            } header: {
+                Label("All Constant Values", systemImage: "numbers.rectangle")
             }
-            .navigationTitle("Constant Values")
         }
+        .navigationTitle("Constant Values")
     }
 }
 

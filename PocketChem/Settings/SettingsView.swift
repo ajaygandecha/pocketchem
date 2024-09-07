@@ -24,14 +24,12 @@ struct SettingsView: View {
     @EnvironmentObject var settingsStore: SettingsStore
 
     var body: some View {
-        NavigationStack {
             List {
                 optionsSection
                 aboutSection
             }
             .navigationTitle("Settings")
-        }
-        .environment(\.defaultMinListRowHeight, 36)
+            .environment(\.defaultMinListRowHeight, 36)
     }
 
     @ViewBuilder

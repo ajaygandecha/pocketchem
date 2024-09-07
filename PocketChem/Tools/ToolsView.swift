@@ -12,59 +12,57 @@ import SwiftUI
 
 struct ToolsView: View {
     var body: some View {
-        NavigationStack {
-            List {
-                Section {
-                    NavigationLink {
-                        EquationBalancerView()
-                    } label: {
-                        Label {
-                            Text("Chemical Equation Balancer")
-                        } icon: {
-                            Image(systemName: "level")
-                                .foregroundStyle(.pcLime)
-                        }
-                        .frame(height: 36)
+        List {
+            Section {
+                NavigationLink {
+                    EquationBalancerView()
+                } label: {
+                    Label {
+                        Text("Chemical Equation Balancer")
+                    } icon: {
+                        Image(systemName: "level")
+                            .foregroundStyle(.pcLime)
                     }
-                    NavigationLink {
-                        SignificantFiguresView()
-                    } label: {
-                        Label {
-                            Text("Find Significant Figures")
-                        } icon: {
-                            Image(systemName: "number.circle")
-                                .foregroundStyle(.pcLavender)
-                        }
-                        .frame(height: 36)
-                    }
-                    NavigationLink {
-                        EmpiricalSolverView()
-                    } label: {
-                        Label {
-                            Text("Empirical Formula Solver")
-                        } icon: {
-                            Image(systemName: "sparkle.magnifyingglass")
-                                .foregroundStyle(.pcLightPink)
-                        }
-                        .frame(height: 36)
-                    }
-                    NavigationLink {
-                        MolecularSolverView()
-                    } label: {
-                        Label {
-                            Text("Molecular Formula Solver")
-                        } icon: {
-                            Image(systemName: "1.magnifyingglass")
-                                .foregroundStyle(.pcGrayBlue)
-                        }
-                        .frame(height: 36)
-                    }
-                } header: {
-                    Label("All Tools", systemImage: "hammer")
+                    .frame(height: 36)
                 }
+                NavigationLink {
+                    SignificantFiguresView()
+                } label: {
+                    Label {
+                        Text("Find Significant Figures")
+                    } icon: {
+                        Image(systemName: "number.circle")
+                            .foregroundStyle(.pcLavender)
+                    }
+                    .frame(height: 36)
+                }
+                NavigationLink {
+                    EmpiricalSolverView()
+                } label: {
+                    Label {
+                        Text("Empirical Formula Solver")
+                    } icon: {
+                        Image(systemName: "sparkle.magnifyingglass")
+                            .foregroundStyle(.pcLightPink)
+                    }
+                    .frame(height: 36)
+                }
+                NavigationLink {
+                    MolecularSolverView()
+                } label: {
+                    Label {
+                        Text("Molecular Formula Solver")
+                    } icon: {
+                        Image(systemName: "1.magnifyingglass")
+                            .foregroundStyle(.pcGrayBlue)
+                    }
+                    .frame(height: 36)
+                }
+            } header: {
+                Label("All Tools", systemImage: "hammer")
             }
-            .navigationTitle("Chemistry Tools")
         }
+        .navigationTitle("Chemistry Tools")
         .environment(\.defaultMinListRowHeight, 36)
     }
 }
